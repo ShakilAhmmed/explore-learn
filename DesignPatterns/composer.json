@@ -1,0 +1,17 @@
+{
+    "name": "shakil/design-patterns",
+    "description": "Learning Design Patterns",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shakil Ahmmed",
+            "email": "shakilfci461@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
