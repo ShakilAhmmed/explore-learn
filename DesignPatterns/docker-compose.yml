@@ -1,0 +1,28 @@
+version: "3.7"
+services:
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: explore-learn
+    container_name: explore-learn-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - explore-learn-network
+  nginx:
+    image: nginx:alpine
+    container_name: explore-learn-nginx
+    restart: unless-stopped
+    ports:
+      - 8000:80
+    volumes:
+      - ./:/var/www
+      - ./.docker/nginx:/etc/nginx/conf.d/
+    networks:
+      - explore-learn-network
+networks:
+  explore-learn-network:
+    driver: bridge

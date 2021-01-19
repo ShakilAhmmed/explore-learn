@@ -1,5 +1,5 @@
 <?php
-require __DIR__ . "./vendor/autoload.php";
+require __DIR__ . "/vendor/autoload.php";
 
 use App\Strategy\Sorting;
 use \App\Strategy\Sort;
