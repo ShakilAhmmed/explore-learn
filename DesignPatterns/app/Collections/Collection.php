@@ -83,3 +83,4 @@ class Collection implements Countable
         return count($this->collect);
     }
 }
+
