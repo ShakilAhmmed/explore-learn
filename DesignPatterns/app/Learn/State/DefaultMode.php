@@ -12,7 +12,6 @@ class DefaultMode implements TravelModeContracts
     public function etaCalculation()
     {
         echo "Calculating ETA (walking)";
-
     }
 
     /**
