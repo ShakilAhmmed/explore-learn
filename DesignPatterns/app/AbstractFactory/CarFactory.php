@@ -5,8 +5,8 @@ namespace App\AbstractFactory;
 class CarFactory extends BaseFactory
 {
 
-    public function create($name, $model)
+    public function create($name, $model): Car
     {
-        return new Truck($name, $model);
+        return new Car($name, $model);
     }
 }
